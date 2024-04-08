@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="content">
+    <div class="text" data-text="Gradient">Gradient</div>
+  </div>
+  
+  <div class="wrapper">
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="left">Left</span>
+        <span class="item" data-name="Right">Right</span>
+        <span class="item" data-name="B-Left">B-Left</span>
+        <span class="item" data-name="T-Right">T-Right</span>
+        <span class="item" data-name="B-Left">B-Left</span>
+      </div>
+    </nav>
+    <div class="gallery">
+      <div class="image" data-name="left"><span><div id="box" class="box1" style="background: linear-gradient(to right, #A2C1BB , #B8A2C1); "></div></span>
+        <div class="inputcolor">
+        <input class="color11" type="color" name="color1" value="#A2C1BB">
+        <input class="color12" type="color" name="color2" value="#B8A2C1">
+        <button onclick="gradbox()">Copy</button>
+      </div>
+    </div>
+      <div class="image" data-name="B-Left"><span><div id="box" style="background: linear-gradient(to left, #995344 , #4CBE1B); "></div></span>
+      <div class="inputcolor">
+        <input class="color21" type="color" name="color1" value="#995344">
+        <input class="color22" type="color" name="color2" value="#4CBE1B">
+        <button onclick="gradbox()">Copy</button>
+      </div>
+    </div>
+      <div class="image" data-name="T-Right"><span><div id="box" style="background: linear-gradient(to top right, #a29a4d ,  #a78ae8); "></div></span>
+      <div class="inputcolor">
+        <input class="color1" type="color" name="color1" value="#a29a4d">
+        <input class="color2" type="color" name="color2" value="#a78ae8">
+        <button onclick="gradbox()">Copy</button>
+      </div>
+    </div>
+      <div class="image" data-name="Right"><span><div id="box" style="background: linear-gradient(to right, #a5dc5c , #d90bbc); "></div></span>
+      <div class="inputcolor">
+        <input class="color1" type="color" name="color1" value="#a5dc5c">
+        <input class="color2" type="color" name="color2" value="#d90bbc">
+        <button onclick="gradbox()">Copy</button>
+      </div></div>
+      <div class="image" data-name="B-Left"><span><div id="box" style="background: linear-gradient(to bottom left, #8a2e7f , #62f87c); "></div></span>
+      <div class="inputcolor">
+        <input class="color1" type="color" name="color1" value="#8a2e7f">
+        <input class="color2" type="color" name="color2" value="#62f87c">
+        <button onclick="gradbox()">Copy</button>
+      </div></div>
+      <div class="image" data-name="B-Left"><span><div id="box" style="background: linear-gradient(to bottom right, #5217c7 , #ee2cc2); "></div></span>
+      <div class="inputcolor">
+        <input class="color1" type="color" name="color1" value="#5217c7">
+        <input class="color2" type="color" name="color2" value="#ee2cc2">
+        <button onclick="gradbox()">Copy</button>
+      </div></div>
+      <div class="image" data-name="Right"><span><div id="box" style="background: linear-gradient(to right, #f2ee12 , #594f77); "></div></span>
+      <div class="inputcolor">
+        <input class="color1" type="color" name="color1" value="#f2ee12">
+        <input class="color2" type="color" name="color2" value="#594f77">
+        <button onclick="gradbox()">Copy</button>
+      </div></div>
+      <div class="image" data-name="T-Right"><span><div id="box" style="background: linear-gradient(to top right, #83bfb8 , #8500c9); "></div></span>
+      <div class="inputcolor">
+        <input class="color1" type="color" name="color1" value="#83bfb8">
+        <input class="color2" type="color" name="color2" value="#8500c9">
+        <button onclick="gradbox()">Copy</button>
+      </div></div>
+    </div>
+  </div>
+  <div id="bg" style="height: 100px; width:100%; border-radius: 29px;">
+    <div id="randomgradient">
+      <button onclick="generate()" class="btn" id="gen-btn">Random</button>
+      <code id="output"></code>
+      
+    </div>  
+        
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

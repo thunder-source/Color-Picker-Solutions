@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+h1 {
+  text-align: center;
+  color: indigo;
+}
+.multicolor {
+  background-image: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    green,
+    blue,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+.container {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-picker {
+  position: relative;
+}
+.color-indicator {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+#picker {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#selector {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+#selector h3 {
+  background-image: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    green,
+    blue,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#opacity-select {
+  color: rgb(192, 31, 31);
+  margin-left: 50px;
+  cursor: pointer;
+}
+#text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#left {
+  margin: 1px;
+  width: 100px;
+}
+#left p {
+  padding-top: 7px;
+  padding-left: 5px;
+  height: 30px;
+  font-weight: bold;
+  background-color: #f5e4d7;
+  color: #000;
+}
+
+#right {
+  position: relative;
+  width: 250px;
+}
+
+#right p {
+  padding-top: 7px;
+  padding-right: 10px;
+  text-align: end;
+  height: 30px;
+  background-color: #e6f8ff;
+  color: #000;
+}
+
+button {
+  margin-left: 10px;
+  background-color: #e6f8ff;
+  cursor: pointer;
+  border: none;
+}
+
+button .myclip1 {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 97%;
+  left: 90%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button .myclip1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button:hover .myclip1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+button .myclip2 {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 77.5%;
+  left: 90%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button .myclip2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button:hover .myclip2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+button .myclip3 {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 58.5%;
+  left: 90%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button .myclip3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button:hover .myclip3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+button .myclip4 {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 39.5%;
+  left: 90%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button .myclip4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button:hover .myclip4 {
+  visibility: visible;
+  opacity: 1;
+}
+
+button .myclip5 {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 21%;
+  left: 90%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+button .myclip5::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button:hover .myclip5 {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  #selector {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .container {
+    flex-direction: column;
+  }
+  #selector {
+    margin-left: 0px;
+  }
+  #picker {
+    margin-left: 0px;
+  }
+}

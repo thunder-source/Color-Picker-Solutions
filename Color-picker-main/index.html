@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/04/18/60/42/240_F_418604207_rIQMeo3hhsNX9ARAk7MloG28tiG3WzhE.jpg">
+    <script src="https://kit.fontawesome.com/284d7e7b37.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1><i class="fa-solid fa-palette"></i><span class="multicolor"> Color Picker</span></h1>
+    <div class="container">
+        <div class="color-picker"></div>
+        <div id="color-indicator" class="color-indicator"></div>
+        <div id="picker"></div>
+        <div id="selector">
+            <h3>Opacity Scale Range(0 - 1)</h3>
+        <input type="range"  id="opacity-select"  min="0" max="1" step="0.1" value="1"  list="tickmarks">
+        <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="0.1"></option>
+        <option value="0.2"></option>
+        <option value="0.3"></option>
+        <option value="0.4"></option>
+        <option value="0.5"></option>
+        <option value="0.6"></option>
+        <option value="0.7"></option>
+        <option value="0.8"></option>
+        <option value="0.9"></option>
+        <option value="1"></option>
+        </datalist>
+        </div>
+    </div>
+
+    <div id="text">
+        <div id="left">
+            <p>HexString</p>
+            <p>RGB</p>
+            <p>RGBA</p>
+            <p>HSL</p>
+            <p>HSLA</p>
+        </div>
+        <div id="right">
+            <p id="hex">#ffffff <button onclick="Myfuc1()"><i class="fa-solid fa-copy"></i><span class="myclip1" id="myToolTip1"></span></button></p>
+            <p id="rgb">rgb(255, 255, 255) <button onclick="Myfuc2()"><i class="fa-solid fa-copy"></i><span class="myclip2" id="myToolTip2"></span></button></p>
+            <p id="rgba">rgba(255, 255, 255, 1) <button onclick="Myfuc3()"><i class="fa-solid fa-copy"></i><span class="myclip3" id="myToolTip3"></span></button></p>
+            <p id="hsl">hsl(0, 0%, 100%) <button onclick="Myfuc4()"><i class="fa-solid fa-copy"></i><span class="myclip4" id="myToolTip4"></span></button></p>
+            <p id="hsla">hsla(0, 0%, 100%, 1) <button onclick="Myfuc5()"><i class="fa-solid fa-copy"></i><span class="myclip5" id="myToolTip5"></span></button></p>
+        </div>
+    </div>
+    
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>

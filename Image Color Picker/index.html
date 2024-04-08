@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Picker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <img id="picked-image" src="./demo.jpg" height="100%" width="100%" alt="" class="preview">
+        </div>
+
+        <div class="picker_box">
+            <div>
+                <h2>Picked color</h2>
+                <div class="picker_color_item">
+                    <div>
+                        <p>Hex:</p>
+                    </div>
+                    <div>
+                        <p class="result res result-pre" style="margin-right:10px">#091515</p>
+                        <button onclick="copy(0)" id="toast-btn">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" style="color:currentcolor;    height: 20px;
+                            width: 20px;" class="jsx-418323402">
+                                <path
+                                    d="M8 17.929H6c-1.105 0-2-.912-2-2.036V5.036C4 3.91 4.895 3 6 3h8c1.105 0 2 .911 2 2.036v1.866m-6 .17h8c1.105 0 2 .91 2 2.035v10.857C20 21.09 19.105 22 18 22h-8c-1.105 0-2-.911-2-2.036V9.107c0-1.124.895-2.036 2-2.036z"
+                                    class="jsx-418323402"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="picker_color_item">
+                    <div>
+                        <p>RGB:</p>
+                    </div>
+                    <div>
+                        <p class="rgb-res" style="margin-right:10px">rgb(37, 150, 190)</p>
+                        <button onclick="copy(1)">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" style="color:currentcolor;    height: 20px;
+                            width: 20px;" class="jsx-418323402">
+                                <path
+                                    d="M8 17.929H6c-1.105 0-2-.912-2-2.036V5.036C4 3.91 4.895 3 6 3h8c1.105 0 2 .911 2 2.036v1.866m-6 .17h8c1.105 0 2 .91 2 2.035v10.857C20 21.09 19.105 22 18 22h-8c-1.105 0-2-.911-2-2.036V9.107c0-1.124.895-2.036 2-2.036z"
+                                    class="jsx-418323402"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="picker_color_item">
+                    <div>
+                        <p>HSL:</p>
+                    </div>
+                    <div>
+                        <p class="hls-res" style="margin-right:10px">rgb(37, 150, 190)</p>
+                        <button onclick="copy(2)">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" style="color:currentcolor;    height: 20px;
+                            width: 20px;" class="jsx-418323402">
+                                <path
+                                    d="M8 17.929H6c-1.105 0-2-.912-2-2.036V5.036C4 3.91 4.895 3 6 3h8c1.105 0 2 .911 2 2.036v1.866m-6 .17h8c1.105 0 2 .91 2 2.035v10.857C20 21.09 19.105 22 18 22h-8c-1.105 0-2-.911-2-2.036V9.107c0-1.124.895-2.036 2-2.036z"
+                                    class="jsx-418323402"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="open-picker btn" style="margin-top:10px;">Open Color Picker</button>
+            <label for="select-image" class="btn" style="margin-top:10px;">Choose Image</label>
+            <input type="file" id="select-image">
+
+        </div>
+    </div>
+    <div class="toast">
+        <div class="toast-content ">
+            <svg class="check" style="display: flex;" fill="white" height="35" width="35">
+                <path d="m9.55 18-5.7-5.7 1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4Z" />
+            </svg>
+            <div class="message">
+                <span class="text text-1">Copied !!!</span>
+                <span class="text text-2">Your color has been copied</span>
+            </div>
+        </div>
+
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" height="30" width="30">
+            <path
+                d="M6.062 15 5 13.938 8.938 10 5 6.062 6.062 5 10 8.938 13.938 5 15 6.062 11.062 10 15 13.938 13.938 15 10 11.062Z" />
+        </svg>
+        <div class="progress"></div>
+    </div>
+
+    <!-- <button id="toast-btn">Show Toast</button> -->
+
+
+    <script src="./script.js"></script>
+    <script src="./averagebg.js"></script>
+
+</body>
+
+</html>
+
+<!-- <h5 class="result res">Hex</h5>
+<p class="hex-color"></p> -->
